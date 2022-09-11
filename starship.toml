@@ -1,0 +1,32 @@
+format = """$battery$username@ $hostname - $directory$golang$rust$nodejs- [ﬦ](bold #5DE4c7) """
+
+[battery]
+full_symbol = "🔋 "
+charging_symbol = "⚡️ "
+discharging_symbol = "💀 "
+
+[[battery.display]]
+threshold = 50
+style = "bold red"
+
+[character]
+success_symbol ="[](bold green)"
+error_symbol = "[窱](bold red)"
+
+[golang]
+format = "via [ $version](bold cyan) "
+
+
+
+[username]
+style_user = "#ADD7FF bold"
+style_root = "red bold"
+format = "[$user]($style) "
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = "[$hostname](bold #5DE4c7) "
+disabled = false
+ssh_symbol = "🌏 "
